@@ -2,7 +2,9 @@
 
 A dark [Omarchy](https://omarchy.org) theme from deep space: blue-black backgrounds, warm starlight text and gold accents, named after the golden records that Voyager 1 and 2 carry out of the solar system.
 
-![Golden Record preview](preview.jpg)
+![Golden Record](card.jpg)
+
+![Golden Record on a desktop: Neovim, btop and fastfetch](preview.jpg)
 
 ## Install
 

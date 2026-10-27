@@ -12,4 +12,4 @@ All backgrounds are cropped and resized to 3840×2160. NASA images are in the pu
 | `6-golden-sun.jpg` | The Sun at 171 Å during the 2012 Venus transit (SDO/AIA), softened into black | NASA/SDO | [GSFC_20171208_Archive_e001734](https://images.nasa.gov/details/GSFC_20171208_Archive_e001734) | Public domain |
 | `7-cartwheel.jpg` | Cartwheel Galaxy (NIRCam and MIRI) | NASA, ESA, CSA, STScI | [esawebb.org/images/weic2211a](https://esawebb.org/images/weic2211a/) | CC BY 4.0 |
 
-`preview.jpg` uses `1-cosmic-cliffs.jpg` (NASA, ESA, CSA, STScI; CC BY 4.0).
+`card.jpg` and `preview.jpg` (a desktop screenshot) use `1-cosmic-cliffs.jpg` (NASA, ESA, CSA, STScI; CC BY 4.0).
