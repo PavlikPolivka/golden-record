@@ -1,0 +1,9 @@
+[Unit]
+Description=Golden Record: rotate the space background every 20 minutes
+
+[Timer]
+OnActiveSec=20min
+OnUnitActiveSec=20min
+
+[Install]
+WantedBy=timers.target

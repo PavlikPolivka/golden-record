@@ -1,0 +1,35 @@
+# Golden Record: deep-space blue-black with Voyager-gold accents.
+mode = "dark"
+
+accent = "#e3b341"
+selection = "#2b2f42"
+muted = "#5b6078"
+
+background = "#0b0d14"
+dark_background = "#080a10"
+darker_background = "#05060b"
+lighter_background = "#161a26"
+
+foreground = "#e8e2d0"
+dark_foreground = "#8a8fa6"
+light_foreground = "#cfc8b4"
+bright_foreground = "#f7f1de"
+
+hyprland_active_border = "rgba(e3b341ee) rgba(f7d98aee)"
+hyprland_inactive_border = "rgba(2b2f42aa)"
+
+red = "#e5725f"
+orange = "#ee9b52"
+yellow = "#f0c75e"
+green = "#9bc48a"
+cyan = "#78c4d4"
+blue = "#82a2f0"
+magenta = "#c79ae6"
+brown = "#a07c4a"
+
+bright_red = "#f08a78"
+bright_yellow = "#f7d98a"
+bright_green = "#b3d6a3"
+bright_cyan = "#98d6e3"
+bright_blue = "#a2baf5"
+bright_magenta = "#dab6f0"

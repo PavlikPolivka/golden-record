@@ -1,0 +1,6 @@
+#!/bin/bash
+# Golden Record: show the next space background while the theme is active.
+# Run on a timer by golden-record-rotate.timer (see README).
+
+[[ $(cat "$HOME/.local/state/omarchy/current/theme.name" 2>/dev/null) == "golden-record" ]] || exit 0
+exec omarchy-theme-bg-next

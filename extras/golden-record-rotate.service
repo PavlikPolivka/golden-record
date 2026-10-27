@@ -1,0 +1,6 @@
+[Unit]
+Description=Golden Record: rotate the space background
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/golden-record-rotate
