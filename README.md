@@ -27,18 +27,24 @@ or Super + Alt + Space → Install → Style → Theme, and paste the link.
   | Window border | gold gradient `#e3b341` → `#f7d98a` |
 
 - **Icons:** Yaru-yellow.
-- **Seven 4K backgrounds** from NASA missions (Super + Ctrl + Space to switch):
-  Webb's Cosmic Cliffs, Webb's First Deep Field, Saturn eclipsing the Sun (Cassini), Webb's Tarantula Nebula, Earthrise (Apollo 8), the Sun in extreme ultraviolet (SDO) and Webb's Cartwheel Galaxy.
+- **Four 4K backgrounds** from NASA missions, one for each part of the day (Super + Ctrl + Space to switch by hand):
 
-## Optional: rotating background
+  | Time | Background |
+  |---|---|
+  | Morning, 06–11 | Earthrise (Apollo 8) |
+  | Day, 11–17 | The Sun in extreme ultraviolet (SDO) |
+  | Evening, 17–21 | Webb's Cosmic Cliffs in golden light |
+  | Night, 21–06 | Webb's First Deep Field |
 
-To show the next background every 20 minutes while Golden Record is the active theme, run once:
+## Optional: background follows the time of day
+
+To switch backgrounds automatically through the day while Golden Record is the active theme, run once:
 
 ```bash
-bash ~/.config/omarchy/themes/golden-record/extras/install-rotation.sh
+bash ~/.config/omarchy/themes/golden-record/extras/install-timeofday.sh
 ```
 
-It installs a small user timer (`golden-record-rotate.timer`) that does nothing while another theme is active. Change the interval in `~/.config/systemd/user/golden-record-rotate.timer`. Remove it with `extras/uninstall-rotation.sh`.
+It installs a small user timer (`golden-record-timeofday.timer`, checks every 15 minutes) and a theme-set hook, so switching to Golden Record shows the right image straight away. It does nothing while another theme is active. Change the hours at the top of `~/.local/bin/golden-record-timeofday`. Remove it with `extras/uninstall-timeofday.sh`.
 
 ## Credits and licences
 

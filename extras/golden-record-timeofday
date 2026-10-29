@@ -1,0 +1,31 @@
+#!/bin/bash
+# Golden Record: show the background that matches the time of day while the
+# theme is active. Run by golden-record-timeofday.timer and on every theme
+# change (see README). Edit the hours below to move the boundaries.
+
+MORNING=6  # Earthrise
+DAY=11     # the Sun
+EVENING=17 # Cosmic Cliffs
+NIGHT=21   # First Deep Field
+
+[[ $(cat "$HOME/.local/state/omarchy/current/theme.name" 2>/dev/null) == "golden-record" ]] || exit 0
+
+hour=$((10#$(date +%H)))
+if ((hour >= NIGHT || hour < MORNING)); then
+  image=4-night-first-deep-field.jpg
+elif ((hour >= EVENING)); then
+  image=3-evening-cosmic-cliffs.jpg
+elif ((hour >= DAY)); then
+  image=2-day-golden-sun.jpg
+else
+  image=1-morning-earthrise.jpg
+fi
+
+background="$HOME/.local/state/omarchy/current/theme/backgrounds/$image"
+[[ -f $background ]] || exit 0
+
+# Leave the background alone when it's already the right one.
+current=$(readlink -f "$HOME/.local/state/omarchy/current/background" 2>/dev/null)
+[[ $current == "$(readlink -f "$background")" ]] && exit 0
+
+exec omarchy-theme-bg-set "$background"

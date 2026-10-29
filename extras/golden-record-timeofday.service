@@ -1,0 +1,6 @@
+[Unit]
+Description=Golden Record: show the background for the time of day
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/golden-record-timeofday

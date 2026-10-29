@@ -1,0 +1,10 @@
+[Unit]
+Description=Golden Record: check the time-of-day background every 15 minutes
+
+[Timer]
+OnStartupSec=30s
+OnCalendar=*:00/15
+Persistent=true
+
+[Install]
+WantedBy=timers.target
